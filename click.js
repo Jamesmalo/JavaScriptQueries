@@ -9,16 +9,14 @@ function samecolor(){
     }
 }
 function diffcolor(){
-  let color = "#990099"
-  let opcolor = "#66FF66"
   const doc = document;
   let divs = doc.querySelectorAll("#diffcolor div")
     for(let i=0;i<divs.length;i++){
-      if(i % 2 ==0){
-        return divs[i].style.backgroundColor = color;
+      if(i % 2 == 0){
+        divs[i].style.backgroundColor = "#990099";
       }
       else{
-        return divs[i].style.backgroundColor = opcolor;
+        divs[i].style.backgroundColor = "#66FF66";
       }
     }
 }
